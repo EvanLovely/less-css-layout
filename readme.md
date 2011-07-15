@@ -37,6 +37,7 @@ To Do
 * Turn php and the includes into a single html file for easy demo purposes
 * Get first sidebar after #main for SEO
 * Setup menu for changing between sidebar layouts
+* Fix Fixed
 
 Massive Thanks
 --------------------
