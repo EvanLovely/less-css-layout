@@ -1,0 +1,47 @@
+/* Keep in mind that these are global variables, others may be nested in rules for local use. Many abbreviations are borrowed from the Zen Coding abbreviations (ex 'pt' for padding-top, 'w' for width) ~ http://tinyurl.com/2356f96  */
+
+/* =Fixed to Liquid conversion math
+----------------------------------------------- */
+/* Put all values in pixels, but with a % sign after it. The end result is a percentage value, so we need to start with that. */
+/*
+@orig-site-w: 960%;
+@orig-sidebar-w: 100%;
+@orig-sidebar-left-w:50%;
+@orig-sidebar-right-w:100%;
+@orig-site-p:10%;
+
+@site-p: (@orig-site-p / @orig-site-w) * 100;
+@sidebar-w: (@orig-sidebar-w / @orig-site-w) * 100; 
+@sidebar-left-w: (@orig-sidebar-left-w / @orig-site-w) * 100; 
+@sidebar-right-w: (@orig-sidebar-right-w / @orig-site-w) * 100; 
+@site-width:90%;
+*/
+
+/* END: Fixed to Liquid
+---------------*/
+
+/* =Fixed Width Setup
+----------------------------------------------- */
+
+@site-width:960px;
+@site-p:1%;
+@sidebar-w:20%; 
+@sidebar-left-w:18%; 
+@sidebar-right-w:15%; 
+
+
+/* END: Fixed
+---------------*/
+
+
+/* All color variables start with 'c-'. Easy searching. */
+@c-link: #295FFF;
+@c-body-font: #333333;
+@c-sidebar-bg: #999999;
+@c-sidebar-left-bg: #999999;
+@c-sidebar-right-bg: #7F7F7F;
+@c-main-bg: #CCCCCC;
+
+/* This is set on all transitions */
+@fade-time:0.5s;
+@fade-style:ease-in-out;
