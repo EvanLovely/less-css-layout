@@ -29,7 +29,7 @@ Features
 To Do
 --------
 
-* Full WebKit support
+* Old WebKit needs fixed width gradients
 * IE Support
 	* IE 9
 	* IE 8

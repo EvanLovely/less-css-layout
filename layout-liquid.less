@@ -14,6 +14,7 @@ header#branding {
 	}
 }
 #sidebar-first, #sidebar-second {display: none;}
+
 body.sidebar-first {
 	@main-w:100% - @sidebar-w;
 	
@@ -34,6 +35,12 @@ body.sidebar-first {
 			@c-sidebar-bg @sidebar-w, 
 			@c-main-bg @sidebar-w,
 			@c-main-bg 100%
+		);
+		background-image:-webkit-gradient(linear, left top, right top, 
+			color-stop(0%, @c-sidebar-bg), 
+			color-stop(@sidebar-w, @c-sidebar-bg), 
+			color-stop(@sidebar-w, @c-main-bg),
+			color-stop(100%, @c-main-bg)
 		);
 		background-image:-webkit-linear-gradient(
 			left, 
@@ -71,6 +78,12 @@ body.sidebar-second {
 			@c-main-bg @main-w,
 			@c-sidebar-bg @main-w, 
 			@c-sidebar-bg 100%
+		);
+		background-image: -webkit-gradient(linear, left top, right top, 
+			color-stop(0%, @c-main-bg), 
+			color-stop(@main-w, @c-main-bg), 
+			color-stop(@main-w, @c-sidebar-bg),
+			color-stop(100%, @c-sidebar-bg)
 		);
 		background-image:-webkit-linear-gradient(
 			left, 
@@ -116,6 +129,14 @@ body.two-sidebars {
 			@c-main-bg (100 - @sidebar-right-w), 
 			@c-sidebar-right-bg (100 - @sidebar-right-w), 
 			@c-sidebar-right-bg 100%
+		);
+		background-image: -webkit-gradient(linear, left top, right top, 
+			color-stop(0%, @c-sidebar-left-bg), 
+			color-stop(@sidebar-left-w, @c-sidebar-left-bg), 
+			color-stop(@sidebar-left-w, @c-main-bg),
+			color-stop((100 - @sidebar-right-w), @c-main-bg),
+			color-stop((100 - @sidebar-right-w), @c-sidebar-right-bg),
+			color-stop(100%, @c-sidebar-right-bg)
 		);
 		background-image:-webkit-linear-gradient(
 			left, 
