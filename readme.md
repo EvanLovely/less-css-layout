@@ -3,9 +3,9 @@ BetterLayout with [LESS CSS](http://lesscss.org)
 
 Steps
 -------
-
+* Choose Fixed or Liquid layout and make sure the right style sheet is un-commented in the `<head>`
 * Download the [LESS Mac Compiler](http://incident57.com/less/) or any other compiler. Add the `/css` folder.
-* Open `/css/variables.less` and set these variables:
+* Add this folder to the compiler and set these variables in either `variables-liquid.less` or `variables-fixed.less`:
 	* Site Width (Can choose from either a fixed or liquid layout)
 	* Site Padding (Takes it away from the width, so your width is actually how wide the site is).
 	* Sidebar width with only 1 sidebar, or 2 separate width settings  when 2 sidebars are present.
@@ -13,6 +13,7 @@ Steps
 	* There is no #main content width setting as all above widths & paddings get subtracted from the site width.
 	* **Colors** of the sidebars and main content.
 	* Hit save and make sure it compiled
+* Smile
 
 Features
 -----------
@@ -34,7 +35,6 @@ To Do
 	* IE 8
 	* IE 7
 * Sidebar Shadows
-* Turn php and the includes into a single html file for easy demo purposes
 * Get first sidebar after #main for SEO
 * Setup menu for changing between sidebar layouts
 
