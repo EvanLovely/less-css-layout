@@ -40,7 +40,6 @@ Abbreviations are borrowed from the Zen Coding abbreviations (ex 'pt' for paddin
 ----------------------------------------------- */
 /* END: 
 ---------------*/
-@import "variables.less";
 #container {
   width: 87.91666666666667%;
   padding: 0 1.0416666666666665%;
@@ -57,7 +56,7 @@ Abbreviations are borrowed from the Zen Coding abbreviations (ex 'pt' for paddin
   display: none;
 }
 body.sidebar-first #main {
-  width: 59.6875%;
+  width: 47.60416666666667%;
   float: right;
 }
 body.sidebar-first #sidebar-first {
@@ -72,7 +71,7 @@ body.sidebar-first #page {
   background-image: linear-gradient(left, #999999, #999999 38.229166666666664%, #cccccc 38.229166666666664%, #cccccc 100%);
 }
 body.sidebar-second #main {
-  width: 59.68750000000001%;
+  width: 47.60416666666668%;
   float: left;
 }
 body.sidebar-second #sidebar-second {
@@ -82,12 +81,12 @@ body.sidebar-second #sidebar-second {
   float: right;
 }
 body.sidebar-second #page {
-  background-image: -moz-linear-gradient(left, #cccccc, #cccccc 61.770833333333336%, #999999 61.770833333333336%, #999999 100%);
-  background-image: -webkit-linear-gradient(left, #cccccc, #cccccc 61.770833333333336%, #999999 61.770833333333336%, #999999 100%);
-  background-image: linear-gradient(left, #cccccc, #cccccc 61.770833333333336%, #999999 61.770833333333336%, #999999 100%);
+  background-image: -moz-linear-gradient(left, #cccccc, #cccccc 49.68750000000001%, #999999 49.68750000000001%, #999999 100%);
+  background-image: -webkit-linear-gradient(left, #cccccc, #cccccc 49.68750000000001%, #999999 49.68750000000001%, #999999 100%);
+  background-image: linear-gradient(left, #cccccc, #cccccc 49.68750000000001%, #999999 49.68750000000001%, #999999 100%);
 }
 body.two-sidebars #main {
-  width: 59.6875%;
+  width: 47.60416666666667%;
   float: left;
 }
 body.two-sidebars #sidebar-first {
