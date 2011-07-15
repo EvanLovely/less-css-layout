@@ -1,0 +1,218 @@
+/* 
+
+ONLY Un-comment one of the below sections: Fixed to Liquid Converstion, Liquid, or Fixed.
+
+Abbreviations are borrowed from the Zen Coding abbreviations (ex 'pt' for padding-top, 'w' for width) ~ http://tinyurl.com/2356f96  */
+
+/* =Fixed to Liquid conversion math
+----------------------------------------------- */
+/* Put all values in pixels, but with a % sign after it. The end result is a percentage value, so we need to start with that. Uses the equation `target Ö context = result` from the fantastic book Responsive Web Design ~ http://tinyurl.com/3fupe7s */
+
+@orig-site-w: 960%;
+@orig-sidebar-w: 367%;
+@orig-sidebar-left-w:226%;
+@orig-sidebar-right-w:141%;
+@orig-site-p:10%;
+@orig-sidebar-p:5%;
+@orig-main-p:10%;
+
+
+@site-p: (@orig-site-p / @orig-site-w) * 100;
+@sidebar-w: (@orig-sidebar-w / @orig-site-w) * 100; 
+@sidebar-left-w: (@orig-sidebar-left-w / @orig-site-w) * 100; 
+@sidebar-right-w: (@orig-sidebar-right-w / @orig-site-w) * 100; 
+@sidebar-p:(@orig-sidebar-p / @orig-site-w) * 100;
+@main-p:(@orig-main-p / @orig-site-w) * 100;
+
+@site-width:90%;
+
+/* END: Fixed to Liquid
+---------------*/
+
+/* =Liquid Values
+----------------------------------------------- */
+/*
+@site-width:90%;
+@site-p: 2%;
+@sidebar-w: 38.27%; 
+@sidebar-left-w: 23.62%; 
+@sidebar-right-w: 14.64%; 
+@sidebar-p:1%;
+@main-p:5%;
+
+*/
+
+/* END: 
+---------------*/
+
+/* =Fixed Width Values
+----------------------------------------------- */
+/*
+@site-width:960px;
+@site-p:10px;
+@sidebar-w:367px; 
+@sidebar-left-w:226px; 
+@sidebar-right-w:141px; 
+@sidebar-p:5px;
+@main-p:10px;
+
+*/
+/* END: Fixed
+---------------*/
+
+/* =Colors
+----------------------------------------------- */
+@c-sidebar-bg: #999999;
+@c-sidebar-left-bg: #999999;
+@c-sidebar-right-bg: #7F7F7F;
+@c-main-bg: #CCCCCC;
+
+/* END: 
+---------------*/
+
+#container {
+	width: @site-width - (@site-p * 2);
+	padding:0 @site-p;
+	margin: 10px auto 5px;
+}
+header#branding {
+	
+}
+#page {
+	overflow: hidden;
+	background:@c-main-bg;
+	#main {
+		padding: 0 @main-p;
+	}
+}
+#sidebar-first, #sidebar-second {display: none;}
+body.sidebar-first {
+	@main-w:100% - @sidebar-w;
+	
+	#main {
+		width: @main-w - (@main-p * 2);
+		float:right;
+	}
+	#sidebar-first {
+		display: block;
+		width:@sidebar-w - @sidebar-p - @sidebar-p;
+		padding:0 @sidebar-p 0 @sidebar-p;
+		float:left;
+	}
+	#page {
+		background-image:-moz-linear-gradient(
+			left, 
+			@c-sidebar-bg,
+			@c-sidebar-bg @sidebar-w, 
+			@c-main-bg @sidebar-w,
+			@c-main-bg 100%
+		);
+		background-image:-webkit-linear-gradient(
+			left, 
+			@c-sidebar-bg,
+			@c-sidebar-bg @sidebar-w, 
+			@c-main-bg @sidebar-w,
+			@c-main-bg 100%
+		);
+		background-image:linear-gradient(
+			left, 
+			@c-sidebar-bg,
+			@c-sidebar-bg @sidebar-w, 
+			@c-main-bg @sidebar-w,
+			@c-main-bg 100%
+		);
+	}
+}
+body.sidebar-second {
+	@main-w:100% - @sidebar-w;
+	
+	#main {
+		width: @main-w - @main-p - @main-p;
+		float:left;
+	}
+	#sidebar-second {
+		display: block;
+		width:@sidebar-w - @sidebar-p - @sidebar-p;
+		padding:0 @sidebar-p 0 @sidebar-p;
+		float:right;
+	}
+	#page {
+		background-image:-moz-linear-gradient(
+			left, 
+			@c-main-bg,
+			@c-main-bg @main-w,
+			@c-sidebar-bg @main-w, 
+			@c-sidebar-bg 100%
+		);
+		background-image:-webkit-linear-gradient(
+			left, 
+			@c-main-bg,
+			@c-main-bg @main-w,
+			@c-sidebar-bg @main-w, 
+			@c-sidebar-bg 100%
+		);
+		background-image:linear-gradient(
+			left, 
+			@c-main-bg,
+			@c-main-bg @main-w,
+			@c-sidebar-bg @main-w, 
+			@c-sidebar-bg 100%
+		);
+	}
+}
+body.two-sidebars {
+	@main-w:100% - @sidebar-left-w - @sidebar-right-w - @main-p - @main-p;
+	
+	#main {
+		width: @main-w;
+		float:left;
+	}
+	#sidebar-first {
+		display: block;
+		width:@sidebar-left-w - @sidebar-p - @sidebar-p;
+		padding:0 @sidebar-p 0 @sidebar-p;
+		float:left;
+	}
+	#sidebar-second {
+		display: block;
+		width:@sidebar-right-w - @sidebar-p - @sidebar-p;
+		padding:0 @sidebar-p 0 @sidebar-p;
+		float:left;
+	}
+	#page {
+		background-image:-moz-linear-gradient(
+			left, 
+			@c-sidebar-left-bg, 
+			@c-sidebar-left-bg @sidebar-left-w, 
+			@c-main-bg @sidebar-left-w, 
+			@c-main-bg (100 - @sidebar-right-w), 
+			@c-sidebar-right-bg (100 - @sidebar-right-w), 
+			@c-sidebar-right-bg 100%
+		);
+		background-image:-webkit-linear-gradient(
+			left, 
+			@c-sidebar-left-bg, 
+			@c-sidebar-left-bg @sidebar-left-w, 
+			@c-main-bg @sidebar-left-w, 
+			@c-main-bg (100 - @sidebar-right-w), 
+			@c-sidebar-right-bg (100 - @sidebar-right-w), 
+			@c-sidebar-right-bg 100%
+		);
+		background-image:linear-gradient(
+			left, 
+			@c-sidebar-left-bg, 
+			@c-sidebar-left-bg @sidebar-left-w, 
+			@c-main-bg @sidebar-left-w, 
+			@c-main-bg (100 - @sidebar-right-w), 
+			@c-sidebar-right-bg (100 - @sidebar-right-w), 
+			@c-sidebar-right-bg 100%
+		);
+		
+	}
+}
+footer {
+	clear:both; 
+}
+img, embed, object, video {
+	max-width: 100%;
+}
