@@ -4,8 +4,8 @@ BetterLayout with [LESS CSS](http://lesscss.org)
 Steps
 -------
 * Choose Fixed or Liquid layout and make sure the right style sheet is un-commented in the `<head>`
-* Download the [LESS Mac Compiler](http://incident57.com/less/) or any other compiler. Add the `/css` folder.
-* Add this folder to the compiler and set these variables in either `variables-liquid.less` or `variables-fixed.less`:
+* Download the [LESS Mac Compiler](http://incident57.com/less/) or any other compiler. Add this folder to the compiler.
+* Set these variables in either `variables-liquid.less` or `variables-fixed.less`:
 	* Site Width (Can choose from either a fixed or liquid layout)
 	* Site Padding (Takes it away from the width, so your width is actually how wide the site is).
 	* Sidebar width with only 1 sidebar, or 2 separate width settings  when 2 sidebars are present.
