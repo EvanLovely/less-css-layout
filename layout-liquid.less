@@ -49,6 +49,13 @@ body.sidebar-first {
 			@c-main-bg @sidebar-w,
 			@c-main-bg 100%
 		);
+		-pie-background-image:linear-gradient(
+			left, 
+			@c-sidebar-bg,
+			@c-sidebar-bg @sidebar-w, 
+			@c-main-bg @sidebar-w,
+			@c-main-bg 100%
+		);
 		background-image:linear-gradient(
 			left, 
 			@c-sidebar-bg,
@@ -56,6 +63,7 @@ body.sidebar-first {
 			@c-main-bg @sidebar-w,
 			@c-main-bg 100%
 		);
+		.pie();
 	}
 }
 body.sidebar-second {
@@ -99,6 +107,7 @@ body.sidebar-second {
 			@c-sidebar-bg @main-w, 
 			@c-sidebar-bg 100%
 		);
+		.pie();
 	}
 }
 body.two-sidebars {
@@ -156,6 +165,7 @@ body.two-sidebars {
 			@c-sidebar-right-bg (100 - @sidebar-right-w), 
 			@c-sidebar-right-bg 100%
 		);
+		.pie();
 		
 	}
 }
