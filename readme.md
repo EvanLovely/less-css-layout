@@ -29,28 +29,22 @@ Features
 To Do
 --------
 
-* Old WebKit needs fixed width gradients
-* IE Support
-	* IE 9
-	* IE 8
-	* IE 7
 * Sidebar Shadows
 * Get first sidebar after #main for SEO
-* Setup menu for changing between sidebar layouts
 
 Browser Support
 ---------------
 
-**Gecko**
+**Firefox 3.6+**
 
 * Y Left Sidebar - Fixed
 * Y Right Sidebar - Fixed
-* Y Both Sidebars - Fixed
+* N Both Sidebars - Fixed
 * Y Left Sidebar - Liquid
 * Y Right Sidebar - Liquid
 * Y Both Sidebars - Liquid
 
-**Old Webkit**
+**Safari (Old Webkit)**
 
 * N Left Sidebar - Fixed
 * N Right Sidebar - Fixed
@@ -59,10 +53,10 @@ Browser Support
 * Y Right Sidebar - Liquid
 * Y Both Sidebars - Liquid
 
-**New Webkit**
+**Chrome (New Webkit)**
 
-* N Left Sidebar - Fixed
-* N Right Sidebar - Fixed
+* Y Left Sidebar - Fixed
+* Y Right Sidebar - Fixed
 * N Both Sidebars - Fixed
 * Y Left Sidebar - Liquid
 * Y Right Sidebar - Liquid
