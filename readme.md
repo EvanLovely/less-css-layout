@@ -38,6 +38,63 @@ To Do
 * Get first sidebar after #main for SEO
 * Setup menu for changing between sidebar layouts
 
+Browser Support
+---------------
+
+**Gecko**
+
+* Y Left Sidebar - Fixed
+* Y Right Sidebar - Fixed
+* Y Both Sidebars - Fixed
+* Y Left Sidebar - Liquid
+* Y Right Sidebar - Liquid
+* Y Both Sidebars - Liquid
+
+**Old Webkit**
+
+* N Left Sidebar - Fixed
+* N Right Sidebar - Fixed
+* N Both Sidebars - Fixed
+* Y Left Sidebar - Liquid
+* Y Right Sidebar - Liquid
+* Y Both Sidebars - Liquid
+
+**New Webkit**
+
+* N Left Sidebar - Fixed
+* N Right Sidebar - Fixed
+* N Both Sidebars - Fixed
+* Y Left Sidebar - Liquid
+* Y Right Sidebar - Liquid
+* Y Both Sidebars - Liquid
+
+**IE 7**
+
+* N Left Sidebar - Fixed
+* N Right Sidebar - Fixed
+* N Both Sidebars - Fixed
+* N Left Sidebar - Liquid
+* N Right Sidebar - Liquid
+* N Both Sidebars - Liquid
+
+**IE 8**
+
+* N Left Sidebar - Fixed
+* N Right Sidebar - Fixed
+* N Both Sidebars - Fixed
+* N Left Sidebar - Liquid
+* N Right Sidebar - Liquid
+* N Both Sidebars - Liquid
+
+**IE 9**
+
+* N Left Sidebar - Fixed
+* N Right Sidebar - Fixed
+* N Both Sidebars - Fixed
+* N Left Sidebar - Liquid
+* N Right Sidebar - Liquid
+* N Both Sidebars - Liquid
+
 Massive Thanks
 --------------------
 
