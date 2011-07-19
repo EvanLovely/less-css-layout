@@ -112,26 +112,26 @@ body.two-sidebars {
 			@c-sidebar-left-bg, 
 			@c-sidebar-left-bg @sidebar-left-w, 
 			@c-main-bg @sidebar-left-w, 
-			@c-main-bg (100 - @sidebar-right-w), 
-			@c-sidebar-right-bg (100 - @sidebar-right-w), 
-			@c-sidebar-right-bg @site-width
+			@c-main-bg (@site-width - @sidebar-right-w - (@site-p * 2)), 
+			@c-sidebar-right-bg (@site-width - (@site-p * 2) - @sidebar-right-w - (@sidebar-p * 2)), 
+			@c-sidebar-right-bg (@site-width - (@site-p * 2))
 		);
 		background-image:-webkit-linear-gradient(
 			left, 
 			@c-sidebar-left-bg, 
 			@c-sidebar-left-bg @sidebar-left-w, 
 			@c-main-bg @sidebar-left-w, 
-			@c-main-bg (100 - @sidebar-right-w), 
-			@c-sidebar-right-bg (100 - @sidebar-right-w), 
-			@c-sidebar-right-bg @site-width
-		);
+			@c-main-bg (@site-width - @sidebar-right-w - (@site-p * 2)), 
+			@c-sidebar-right-bg (@site-width - (@site-p * 2) - @sidebar-right-w - (@sidebar-p * 2)), 
+			@c-sidebar-right-bg (@site-width - (@site-p * 2))
+		);		
 		background-image:linear-gradient(
 			left, 
 			@c-sidebar-left-bg, 
 			@c-sidebar-left-bg @sidebar-left-w, 
 			@c-main-bg @sidebar-left-w, 
-			@c-main-bg (100 - @sidebar-right-w), 
-			@c-sidebar-right-bg (100 - @sidebar-right-w), 
+			@c-main-bg (@site-width - @sidebar-right-w - @sidebar-right-w), 
+			@c-sidebar-right-bg (@site-width - (@site-p * 2) - @sidebar-right-w - (@sidebar-p * 2)), 
 			@c-sidebar-right-bg @site-width
 		);
 		
