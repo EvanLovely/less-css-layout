@@ -27,6 +27,10 @@
   color: #111111;
   text-decoration: underline;
 }
+#nav li a.active {
+  background: #aaa;
+  border-color: #ccc;
+}
 #nav li:first-child + li + li + li ~ li {
   float: right;
 }
