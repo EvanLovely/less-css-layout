@@ -89,6 +89,18 @@ Browser Support
 * N Right Sidebar - Liquid
 * N Both Sidebars - Liquid
 
+*Table Example*
+
+I'd like to move the above checklists to a table after a while. Here's one in Markdown: 
+
+| First Header  | Second Header | Third Header |
+| :------------ | :-----------: | -----------: |
+| First row     | Data          | Very long data entry |
+| Second row    | **Cell**      | *Cell*       |
+| Third row     | Cell that spans across two columns ||
+[Table caption, works as a reference][section-mmd-tables-table1] 
+
+
 Massive Thanks
 --------------------
 
