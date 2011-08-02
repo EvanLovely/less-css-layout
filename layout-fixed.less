@@ -8,7 +8,6 @@ header#branding {
 }
 #page {
 	overflow: hidden;
-	background:@c-main-bg;
 	#main {
 		padding: 0 @main-p;
 	}
@@ -27,30 +26,6 @@ body.sidebar-first {
 		padding:0 @sidebar-p 0 @sidebar-p;
 		float:left;
 	}
-	#page {
-		background-image:-moz-linear-gradient(
-			left, 
-			@c-sidebar-bg,
-			@c-sidebar-bg @sidebar-w, 
-			@c-main-bg @sidebar-w,
-			@c-main-bg 100%
-		);
-		background-image:-webkit-linear-gradient(
-			left, 
-			@c-sidebar-bg,
-			@c-sidebar-bg @sidebar-w, 
-			@c-main-bg @sidebar-w,
-			@c-main-bg 100%
-		);
-		background-image:linear-gradient(
-			left, 
-			@c-sidebar-bg,
-			@c-sidebar-bg @sidebar-w, 
-			@c-main-bg @sidebar-w,
-			@c-main-bg 100%
-		);
-		.pie();
-	}
 }
 body.sidebar-second {
 	@main-w:(@site-width - (@site-p * 2)) - @sidebar-w;
@@ -64,30 +39,6 @@ body.sidebar-second {
 		width:@sidebar-w - @sidebar-p - @sidebar-p;
 		padding:0 @sidebar-p 0 @sidebar-p;
 		float:right;
-	}
-	#page {
-		background-image:-moz-linear-gradient(
-			left, 
-			@c-main-bg,
-			@c-main-bg @main-w,
-			@c-sidebar-bg @main-w, 
-			@c-sidebar-bg 100%
-		);
-		background-image:-webkit-linear-gradient(
-			left, 
-			@c-main-bg,
-			@c-main-bg @main-w,
-			@c-sidebar-bg @main-w, 
-			@c-sidebar-bg 100%
-		);
-		background-image:linear-gradient(
-			left, 
-			@c-main-bg,
-			@c-main-bg @main-w,
-			@c-sidebar-bg @main-w, 
-			@c-sidebar-bg 100%
-		);
-		.pie();
 	}
 }
 body.two-sidebars {
@@ -108,40 +59,7 @@ body.two-sidebars {
 		padding:0 @sidebar-p 0 @sidebar-p;
 		float:left;
 	}
-	#page {
-		background-image:-moz-linear-gradient(
-			left, 
-			@c-sidebar-left-bg, 
-			@c-sidebar-left-bg @sidebar-left-w, 
-			@c-main-bg @sidebar-left-w, 
-			@c-main-bg (@site-width - @sidebar-right-w - (@site-p * 2)), 
-			@c-sidebar-right-bg (@site-width - (@site-p * 2) - @sidebar-right-w - (@sidebar-p * 2)), 
-			@c-sidebar-right-bg (@site-width - (@site-p * 2))
-		);
-		background-image:-webkit-linear-gradient(
-			left, 
-			@c-sidebar-left-bg, 
-			@c-sidebar-left-bg @sidebar-left-w, 
-			@c-main-bg @sidebar-left-w, 
-			@c-main-bg (@site-width - @sidebar-right-w - (@site-p * 2)), 
-			@c-sidebar-right-bg (@site-width - (@site-p * 2) - @sidebar-right-w - (@sidebar-p * 2)), 
-			@c-sidebar-right-bg (@site-width - (@site-p * 2))
-		);		
-		background-image:linear-gradient(
-			left, 
-			@c-sidebar-left-bg, 
-			@c-sidebar-left-bg @sidebar-left-w, 
-			@c-main-bg @sidebar-left-w, 
-			@c-main-bg (@site-width - @sidebar-right-w - @sidebar-right-w), 
-			@c-sidebar-right-bg (@site-width - (@site-p * 2) - @sidebar-right-w - (@sidebar-p * 2)), 
-			@c-sidebar-right-bg @site-width
-		);
-		.pie();
-	}
 }
 footer {
 	clear:both; 
-}
-img, embed, object, video {
-	max-width: 100%;
 }

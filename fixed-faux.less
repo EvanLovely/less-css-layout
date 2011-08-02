@@ -1,0 +1,87 @@
+#page {
+	background:@c-main-bg;
+}
+body.sidebar-first {
+	#page {
+		background-image:-moz-linear-gradient(
+			left, 
+			@c-sidebar-bg,
+			@c-sidebar-bg @sidebar-w, 
+			@c-main-bg @sidebar-w,
+			@c-main-bg 100%
+		);
+		background-image:-webkit-linear-gradient(
+			left, 
+			@c-sidebar-bg,
+			@c-sidebar-bg @sidebar-w, 
+			@c-main-bg @sidebar-w,
+			@c-main-bg 100%
+		);
+		background-image:linear-gradient(
+			left, 
+			@c-sidebar-bg,
+			@c-sidebar-bg @sidebar-w, 
+			@c-main-bg @sidebar-w,
+			@c-main-bg 100%
+		);
+		.pie();
+	}
+}
+body.sidebar-second {
+	#page {
+		background-image:-moz-linear-gradient(
+			left, 
+			@c-main-bg,
+			@c-main-bg @main-w,
+			@c-sidebar-bg @main-w, 
+			@c-sidebar-bg 100%
+		);
+		background-image:-webkit-linear-gradient(
+			left, 
+			@c-main-bg,
+			@c-main-bg @main-w,
+			@c-sidebar-bg @main-w, 
+			@c-sidebar-bg 100%
+		);
+		background-image:linear-gradient(
+			left, 
+			@c-main-bg,
+			@c-main-bg @main-w,
+			@c-sidebar-bg @main-w, 
+			@c-sidebar-bg 100%
+		);
+		.pie();
+	}
+}
+body.two-sidebars {
+	#page {
+		background-image:-moz-linear-gradient(
+			left, 
+			@c-sidebar-left-bg, 
+			@c-sidebar-left-bg @sidebar-left-w, 
+			@c-main-bg @sidebar-left-w, 
+			@c-main-bg (@site-width - @sidebar-right-w - (@site-p * 2)), 
+			@c-sidebar-right-bg (@site-width - (@site-p * 2) - @sidebar-right-w - (@sidebar-p * 2)), 
+			@c-sidebar-right-bg (@site-width - (@site-p * 2))
+		);
+		background-image:-webkit-linear-gradient(
+			left, 
+			@c-sidebar-left-bg, 
+			@c-sidebar-left-bg @sidebar-left-w, 
+			@c-main-bg @sidebar-left-w, 
+			@c-main-bg (@site-width - @sidebar-right-w - (@site-p * 2)), 
+			@c-sidebar-right-bg (@site-width - (@site-p * 2) - @sidebar-right-w - (@sidebar-p * 2)), 
+			@c-sidebar-right-bg (@site-width - (@site-p * 2))
+		);		
+		background-image:linear-gradient(
+			left, 
+			@c-sidebar-left-bg, 
+			@c-sidebar-left-bg @sidebar-left-w, 
+			@c-main-bg @sidebar-left-w, 
+			@c-main-bg (@site-width - @sidebar-right-w - @sidebar-right-w), 
+			@c-sidebar-right-bg (@site-width - (@site-p * 2) - @sidebar-right-w - (@sidebar-p * 2)), 
+			@c-sidebar-right-bg @site-width
+		);
+		.pie();
+	}
+}
