@@ -1,0 +1,109 @@
+/* 
+
+ONLY Un-comment one of the below sections: Fixed to Liquid Converstion or Liquid.
+
+Abbreviations are borrowed from the Zen Coding abbreviations (ex 'pt' for padding-top, 'w' for width) ~ http://tinyurl.com/2356f96  */
+/* =Fixed to Liquid conversion math
+----------------------------------------------- */
+/* Put all values in pixels, but with a % sign after it. The end result is a percentage value, so we need to start with that. Uses the equation `target � context = result` from the fantastic book Responsive Web Design ~ http://tinyurl.com/3fupe7s */
+/* END: Fixed to Liquid
+---------------*/
+/* =Liquid Values
+----------------------------------------------- */
+/*
+@site-width:90%;
+@site-p: 2%;
+@sidebar-w: 38.27%; 
+@sidebar-left-w: 23.62%; 
+@sidebar-right-w: 14.64%; 
+@sidebar-p:1%;
+@main-p:5%;
+
+*/
+/* END: 
+---------------*/
+/* =Colors
+----------------------------------------------- */
+/* END: 
+---------------*/
+#container {
+  width: 87.91666666666667%;
+  padding: 0 1.0416666666666665%;
+  margin: 10px auto 5px;
+}
+#page {
+  overflow: hidden;
+}
+#page #main {
+  padding: 0 1.0416666666666665%;
+}
+#sidebar-first, #sidebar-second {
+  display: none;
+}
+body.sidebar-first #main {
+  width: 59.6875%;
+  float: right;
+}
+body.sidebar-first #sidebar-first {
+  display: block;
+  width: 37.18749999999999%;
+  padding: 0 0.5208333333333333% 0 0.5208333333333333%;
+  float: left;
+}
+body.sidebar-second #main {
+  width: 59.68750000000001%;
+  float: left;
+}
+body.sidebar-second #sidebar-second {
+  display: block;
+  width: 37.18749999999999%;
+  padding: 0 0.5208333333333333% 0 0.5208333333333333%;
+  float: right;
+}
+body.two-sidebars #main {
+  width: 59.6875%;
+  float: left;
+}
+body.two-sidebars #sidebar-first {
+  display: block;
+  width: 22.500000000000004%;
+  padding: 0 0.5208333333333333% 0 0.5208333333333333%;
+  float: left;
+}
+body.two-sidebars #sidebar-second {
+  display: block;
+  width: 13.645833333333332%;
+  padding: 0 0.5208333333333333% 0 0.5208333333333333%;
+  float: left;
+}
+footer {
+  clear: both;
+}
+img,
+embed,
+object,
+video {
+  max-width: 100%;
+}
+#page {
+  background: #cccccc;
+}
+body.sidebar-first #page {
+  background-image: -moz-linear-gradient(left, #999999, #999999 38.229166666666664%, #cccccc 38.229166666666664%, #cccccc 100%);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, #999999), color-stop(38.229166666666664%, #999999), color-stop(38.229166666666664%, #cccccc), color-stop(100%, #cccccc));
+  background-image: -webkit-linear-gradient(left, #999999, #999999 38.229166666666664%, #cccccc 38.229166666666664%, #cccccc 100%);
+  -pie-background-image: linear-gradient(left, #999999, #999999 38.229166666666664%, #cccccc 38.229166666666664%, #cccccc 100%);
+  background-image: linear-gradient(left, #999999, #999999 38.229166666666664%, #cccccc 38.229166666666664%, #cccccc 100%);
+}
+body.sidebar-second #page {
+  background-image: -moz-linear-gradient(left, #cccccc, #cccccc 61.770833333333336%, #999999 61.770833333333336%, #999999 100%);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, #cccccc), color-stop(61.770833333333336%, #cccccc), color-stop(61.770833333333336%, #999999), color-stop(100%, #999999));
+  background-image: -webkit-linear-gradient(left, #cccccc, #cccccc 61.770833333333336%, #999999 61.770833333333336%, #999999 100%);
+  background-image: linear-gradient(left, #cccccc, #cccccc 61.770833333333336%, #999999 61.770833333333336%, #999999 100%);
+}
+body.two-sidebars #page {
+  background-image: -moz-linear-gradient(left, #999999, #999999 23.541666666666668%, #cccccc 23.541666666666668%, #cccccc 85.3125%, #7f7f7f 85.3125%, #7f7f7f 100%);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, #999999), color-stop(23.541666666666668%, #999999), color-stop(23.541666666666668%, #cccccc), color-stop(85.3125%, #cccccc), color-stop(85.3125%, #7f7f7f), color-stop(100%, #7f7f7f));
+  background-image: -webkit-linear-gradient(left, #999999, #999999 23.541666666666668%, #cccccc 23.541666666666668%, #cccccc 85.3125%, #7f7f7f 85.3125%, #7f7f7f 100%);
+  background-image: linear-gradient(left, #999999, #999999 23.541666666666668%, #cccccc 23.541666666666668%, #cccccc 85.3125%, #7f7f7f 85.3125%, #7f7f7f 100%);
+}
