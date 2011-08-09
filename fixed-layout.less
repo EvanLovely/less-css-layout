@@ -14,7 +14,7 @@ header#branding {
 }
 #sidebar-first, #sidebar-second {display: none;}
 body.sidebar-first {
-	@main-w:(@site-width - (@site-p * 2)) - @sidebar-w;
+	@main-w:(@site-width - (@site-p * 2)) - @sidebar-left-w;
 	
 	#main {
 		width: @main-w - (@main-p * 2);
@@ -22,13 +22,13 @@ body.sidebar-first {
 	}
 	#sidebar-first {
 		display: block;
-		width:@sidebar-w - @sidebar-p - @sidebar-p;
+		width:@sidebar-left-w - @sidebar-p - @sidebar-p;
 		padding:0 @sidebar-p 0 @sidebar-p;
 		float:left;
 	}
 }
 body.sidebar-second {
-	@main-w:(@site-width - (@site-p * 2)) - @sidebar-w;
+	@main-w:(@site-width - (@site-p * 2)) - @sidebar-right-w;
 	
 	#main {
 		width: @main-w - @main-p - @main-p;
@@ -36,7 +36,7 @@ body.sidebar-second {
 	}
 	#sidebar-second {
 		display: block;
-		width:@sidebar-w - @sidebar-p - @sidebar-p;
+		width:@sidebar-right-w - @sidebar-p - @sidebar-p;
 		padding:0 @sidebar-p 0 @sidebar-p;
 		float:right;
 	}
